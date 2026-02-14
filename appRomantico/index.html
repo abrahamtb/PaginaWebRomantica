@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Yhoshelyn ❤️</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<audio id="musica" loop>
+    <source src="music/MusicaRomantica.ogg" type="audio/ogg">
+    <source src="music/MusicaRomantica.mp3" type="audio/mpeg">
+</audio>
+
+<div id="countdown"></div>
+
+<div id="lock">
+    <h1>Acceso secreto 💌</h1>
+    <p>Introduce una Contraseña</p>
+    <input type="password" id="pass" placeholder="Palabra secreta">
+    <button onclick="checkPass()">Entrar</button>
+</div>
+
+<div class="escena" id="e1">
+    <h1>Hola Yhoshelyn ❤️</h1>
+    <p>Tengo algo especial que decirte...</p>
+    <button onclick="ir(2)">Comenzar ✨</button>
+</div>
+
+<div class="escena" id="e2">
+    <h1>Entre millones...</h1>
+    <p id="textoInteractivo"></p>
+    <button id="btnE2" style="display:none" onclick="ir(3)">Continuar</button>
+</div>
+
+<div class="escena" id="e3">
+    <h1>Mini juego 💘</h1>
+    <p>Elige el botón que dicta tu corazón 😏</p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+        <button onclick="mal()">Este no</button>
+        <button onclick="mal()">Tampoco</button>
+        <button onclick="bien()">¡Este es! ❤️</button>
+        <button onclick="mal()">Sigue buscando</button>
+    </div>
+</div>
+
+<div class="escena" id="e4">
+    <h1>¿Escribe tu nombre? 💕</h1>
+    <input id="nombre" placeholder="Escribe tu nombre" oninput="verificarNombre()">
+    <br>
+    <button id="btnSorpresa" style="display:none" onclick="ir(5)">Abrir sorpresa 💖</button>
+</div>
+
+<div class="escena" id="e5">
+    <h1>Para ti amor ❤️</h1>
+    <video id="videoRegalo" controls>
+        <source src="video/video1.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+    </video>
+</div>
+
+<div class="escena" id="e6">
+    <h1>Una pregunta... 💍</h1>
+    <p>¿Quieres pasar el resto de tu vida conmigo?</p>
+    <button onclick="acepto()">¡Sí, mil veces! ❤️</button>
+    <button onclick="acepto()">Obvio que sí 💕</button>
+</div>
+
+<div class="escena" id="e7">
+    <h1>Sabía que dirías que sí 😍</h1>
+    <p id="contadorDias"></p>
+    <button onclick="ir(8)">Tengo algo más 💌</button>
+</div>
+
+<div class="escena" id="e8">
+    <h1>Mi Carta para ti 💖</h1>
+    <div id="e8-container">
+        <p id="textoCarta">
+            Yhoshelyn,<br><br>
+             Desde aquel 31 de julio de 2025, algo en mí cambió para siempre, porque desde el momento en que llegaste a mi vida entendí que no estaba buscando a alguien… en realidad te estaba esperando a ti. Sin darme cuenta, te convertiste en ese lugar donde mi corazón descansa, donde mi mente se calma y donde mi alma se siente en casa.<br>
+
+Lo que siento por ti no cabe en una sola palabra, ni en una frase, ni siquiera en mil textos. Es algo mucho más grande… es esa certeza tranquila que me dice que eres tú, que siempre has sido tú y que no quiero un futuro donde no estés tú.<br>
+
+Aunque hoy la distancia intente separarnos en kilómetros, jamás podrá separar lo que sentimos, porque lo nuestro no vive en un lugar… vive en el corazón. Y el mío, desde que te conoció, aprendió a latir de una manera distinta, más fuerte, más sincera, más feliz.<br>
+
+
+Eres mi calma en los días difíciles, mi sonrisa sin motivo, mi pensamiento favorito y la persona que convierte cualquier momento simple en algo especial. No sabes cuánto agradezco a la vida por haberte puesto en mi camino, porque contigo entendí que el amor verdadero no se busca… se reconoce.<br>
+
+
+No te quiero solo en mis días felices, te quiero en todos: en los buenos, en los difíciles, en los tranquilos y en los locos. Te quiero en cada etapa, en cada sueño y en cada meta. Porque si algo tengo claro, es que no quiero una vida perfecta… quiero una vida contigo.<br>
+
+
+Gracias por existir, por elegirme, por cuidarme con tu cariño y por regalarme ese amor tan tuyo que me hace sentir el hombre más afortunado del mundo.<br>
+
+
+Te amo hoy, mañana y siempre… y si existiera algo después del siempre, también te amaría allí. ❤️
+            <br><br>
+            Te amo hoy, mañana y siempre. ❤️
+        </p>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
